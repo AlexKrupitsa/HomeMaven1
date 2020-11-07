@@ -1,8 +1,8 @@
 package Planner.domain.impl;
 
-import Planner.domain.Tasks;
+import Planner.domain.Task;
 
-public class Shopping extends Tasks {
+public class Shopping extends Task {
     private String categoryShopping;
     public Shopping(String name, int priority, String categoryShopping){
         super(name, priority);
@@ -15,9 +15,4 @@ public class Shopping extends Tasks {
         ", category=" + categoryShopping;
     }
 
-    @Override
-    public int reusable() {
-        System.out.println("The task is reusable!");
-        return super.reusable();
-    }
 }

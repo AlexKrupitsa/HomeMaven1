@@ -1,29 +1,25 @@
 package Planner.domain;
 
-public abstract  class Tasks implements Reusable {
+public abstract  class Task implements Performable {
 
     private String name;
     private int priority;
     private String category;
 
 
-    public Tasks(String name, int priority) {
+    public Task(String name, int priority) {
         this.name = name;
         this.priority = priority;
     }
-
-    public int single() {
+    @Override
+    public void perform() {
         System.out.println("name: " + name + " is single use");
-    }
-
-    public int reusable() {
-        System.out.println("name: " + name + " is reusable");
     }
 
     public String getName() { return name; }
     public void setName(String name) { this.name = name; }
 
-    public String getPriority() { return priority; }
+    public int getPriority() { return priority; }
     public void setPriority(int priority) { this.priority = priority; }
 
     public String getCategory() { return category; }

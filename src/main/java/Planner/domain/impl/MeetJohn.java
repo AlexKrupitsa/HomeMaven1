@@ -1,20 +1,20 @@
 package Planner.domain.impl;
 
-import Planner.domain.Tasks;
+import Planner.domain.Task;
 
-public class meetJohn extends Tasks {
+public class MeetJohn extends Task {
 
     private String categoryJohn;
 
-    public meetJohn(String name, int priority, String categoryJohn){
+    public MeetJohn(String name, int priority, String categoryJohn){
         super(name, priority);
         this.categoryJohn = categoryJohn;
     }
 
     @Override
-    public int single() {
+    public void perform() {
         System.out.println("The task is single!");
-        return super.single();
+         super.perform();
     }
 
     @Override

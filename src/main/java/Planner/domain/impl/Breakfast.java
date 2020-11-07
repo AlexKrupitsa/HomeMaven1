@@ -1,8 +1,8 @@
 package Planner.domain.impl;
 
-import Planner.domain.Tasks;
+import Planner.domain.Task;
 
-public class Breakfast extends Tasks {
+public class Breakfast extends Task {
 
     private String categoryFood;
 
@@ -11,11 +11,6 @@ public class Breakfast extends Tasks {
         this.categoryFood = categoryFood;
     }
 
-    @Override
-    public int reusable() {
-        System.out.println("The task is reusable!");
-        return super.reusable();
-    }
 
     @Override
     public String toString() {
