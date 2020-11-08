@@ -11,7 +11,6 @@ public class Breakfast extends Task {
         this.categoryFood = categoryFood;
     }
 
-
     @Override
     public String toString() {
         return super.toString()+

@@ -13,7 +13,7 @@ public abstract  class Task implements Performable {
     }
     @Override
     public void perform() {
-        System.out.println("name: " + name + " is single use");
+        System.out.println("name: " + name + " is performable");
     }
 
     public String getName() { return name; }
